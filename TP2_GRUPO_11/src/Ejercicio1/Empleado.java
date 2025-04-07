@@ -2,7 +2,7 @@ package Ejercicio1;
 
 import java.util.Objects;
 
-public class Empleado {
+public class Empleado{
 	private final int id;
 	private String nombre;
 	private int edad;
@@ -72,8 +72,4 @@ public class Empleado {
 		Empleado other = (Empleado) obj;
 		return edad == other.edad && id == other.id && Objects.equals(nombre, other.nombre);
 	}
-	
-	
-	
-
 }
