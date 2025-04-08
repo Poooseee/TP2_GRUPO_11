@@ -21,6 +21,18 @@ public String toString() {
 	return "producto Fresco: FECHA CADUCIDAD: "+this.getFechaCaducidad()+", LOTE: "
 			+this.getnumLote()+", FECHA ENVASADO: "+fechaEnvasado+", PAIS: "+paisOrigen;
 }
-  
+
+public Date getFechaEnvasado() {
+	return fechaEnvasado;
+}
+public void setFechaEnvasado(Date fechaEnvasado) {
+	this.fechaEnvasado = fechaEnvasado;
+}
+public String getPaisOrigen() {
+	return paisOrigen;
+}
+public void setPaisOrigen(String paisOrigen) {
+	this.paisOrigen = paisOrigen;
+}
   
 }
