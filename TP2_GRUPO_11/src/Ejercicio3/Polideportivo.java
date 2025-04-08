@@ -1,5 +1,5 @@
 package Ejercicio3;
 
-public class Polideportivo extends instalacionDeportiva {
+public class Polideportivo implements InstalacionDeportiva, Edificio {
 
 }

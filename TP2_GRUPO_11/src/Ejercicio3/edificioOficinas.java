@@ -1,6 +1,6 @@
 package Ejercicio3;
 
-public class edificioOficinas extends Edificio {
+public class edificioOficinas extends EdificioClase {
 	private int numeroOficinas;
 	private double superficie;
 	
