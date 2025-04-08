@@ -18,7 +18,7 @@ public class Producto {
 	//Constructor Vacio
 	public Producto() {};
 	
-	//getter y setters
+	//Getters y Setters
 	public Date getFechaCaducidad() {
 		return fechaCaducidad;
 	}
@@ -34,7 +34,8 @@ public class Producto {
 	
 	//metodo toString para mostrar
 	@Override
-    public String toString() {
-        return "Fecha de Caducidad: " + fechaCaducidad + ", Lote: " + numLote;
-    }
+	public String toString() {
+		return "Fecha de Caducidad: " + fechaCaducidad + "\n"+
+				"Numero de Lote=" + numLote +"\n";
+	}
 }
