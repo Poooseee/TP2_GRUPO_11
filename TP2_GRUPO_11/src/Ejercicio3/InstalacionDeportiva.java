@@ -1,5 +1,5 @@
 package Ejercicio3;
 
-public interface InstalacionDeportiva {
+public interface instalacionDeportiva {
 	public String getTipoDeInstalacion();
 }

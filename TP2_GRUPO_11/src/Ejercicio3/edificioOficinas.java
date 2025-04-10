@@ -1,6 +1,6 @@
 package Ejercicio3;
 
-public class edificioOficinas extends EdificioClase {
+public class edificioOficinas extends Edificio {
 	private int numeroOficinas;
 	private double superficie;
 	
@@ -12,7 +12,12 @@ public class edificioOficinas extends EdificioClase {
 		this.numeroOficinas = numOficinas;
 		this.superficie = superficie;
 	}
-public String toString() {
-	return "edificio de oficinas: superficie: "+superficie+", numero oficinas: "+numeroOficinas;
-}
+	public String toString() {
+		return "edificio de oficinas: superficie: "+superficie+", numero oficinas: "+numeroOficinas;
+	}
+	@Override
+	public double getSuperficieEdificio() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }

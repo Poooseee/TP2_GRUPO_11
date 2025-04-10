@@ -1,6 +1,6 @@
 package Ejercicio3;
 
-public class Polideportivo extends EdificioClase implements InstalacionDeportiva{
+public class Polideportivo extends Edificio implements instalacionDeportiva{
 	private String nombre;
 	
 	//CONSTRUCTORES
@@ -8,7 +8,7 @@ public class Polideportivo extends EdificioClase implements InstalacionDeportiva
 		super(0.0);
 		this.nombre = "sin nombre";
 	}
-	Polideportivo(int superficie, String nombre){
+	Polideportivo(Double superficie, String nombre){
 		super(superficie);
 		this.nombre = nombre;
 	}
@@ -24,11 +24,15 @@ public class Polideportivo extends EdificioClase implements InstalacionDeportiva
 	//toString
 	@Override
 	public String toString() {
-		return "Polideportivo - Nombre: " + nombre + " - Superficie: " + super.getSuperficieEdificio();
+		return "Polideportivo - Nombre: " + nombre + " - Superficie: " + getSuperficieEdificio();
 	}
 	
 	@Override
 	public String getTipoDeInstalacion() {
 		return "Polideportivo";
+	}
+	@Override
+	public double getSuperficieEdificio() {
+		return 0; //COMPLETAR
 	}
 }
