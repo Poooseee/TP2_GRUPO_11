@@ -3,29 +3,29 @@ package Ejercicio3;
 public abstract class EdificioClase {
 	
     // Atributos
-    private double superficieEdificioKm2;
+    private double superficieEdificio;
 
     // Setters y Getters
-    public double getSuperficieEdificioKm2() {
-        return superficieEdificioKm2;
+    public double getSuperficieEdificio() {
+        return superficieEdificio;
     }
 
-    public void setSuperficieEdificioKm2(double superficieEdificioKm2) {
-        this.superficieEdificioKm2 = superficieEdificioKm2;
+    public void setSuperficieEdificio(double superficieEdificioKm2) {
+        this.superficieEdificio = superficieEdificioKm2;
     }
 
     // Constructores
     public EdificioClase() {
-        superficieEdificioKm2 = 0;
+        superficieEdificio = 0;
     }
 
     public EdificioClase(double km) {
-        this.superficieEdificioKm2 = km;
+        this.superficieEdificio = km;
     }
 
     // ToString
     @Override
     public String toString() {
-        return "La superficie del edificio es " + superficieEdificioKm2 + " km².";
+        return "La superficie del edificio es " + superficieEdificio + " km².";
     }
 }

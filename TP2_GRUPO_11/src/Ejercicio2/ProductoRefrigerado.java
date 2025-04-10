@@ -1,6 +1,8 @@
 package Ejercicio2;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Calendar;
 
 public class ProductoRefrigerado extends Producto {
 	private int Codigo_Osa;
@@ -28,9 +30,10 @@ public class ProductoRefrigerado extends Producto {
 	//ToString
 	@Override
 	public String toString() {
-		return super.toString()+
-				"Tipo: REFRIGERADO \n"
-				+"Codigo de Supervision: " + Codigo_Osa;
+		return  "Tipo: REFRIGERADO \n"
+				+"Fecha de caducidad:" + super.formato.format(getFechaCaducidad())+"\n"
+				+"Numero de lote:" + super.getnumLote()+"\n"
+				+"Codigo de Supervision Alimentaria: " + Codigo_Osa;
 	}
 	
 	

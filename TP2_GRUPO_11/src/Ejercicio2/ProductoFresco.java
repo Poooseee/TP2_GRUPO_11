@@ -1,5 +1,8 @@
 package Ejercicio2;
+
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Calendar;
 
 public class ProductoFresco extends Producto {
   private Date fechaEnvasado;
@@ -35,9 +38,10 @@ public class ProductoFresco extends Producto {
   //ToString
 	@Override
 	public String toString() {
-		return super.toString()+
-				"Tipo: FRESCO \n"
-				+"Fecha de Envasado: "+ fechaEnvasado +"\n"
+		return  "Tipo: FRESCO \n"
+				+"Fecha de caducidad:" + super.formato.format(getFechaCaducidad())+"\n"
+				+"Numero de lote:" + super.getnumLote()+"\n"
+				+"Fecha de Envasado: "+ super.formato.format(fechaEnvasado) +"\n"
 				+"Pais de Origen: "+paisOrigen;
 	}
   
