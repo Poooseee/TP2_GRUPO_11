@@ -10,16 +10,16 @@ public class mainEjercicio3 {
 		// Crear la colección de tipo ArrayList
 		ArrayList<Edificio> listaEdificios = new ArrayList<Edificio>();
 		
-		// Agregar 3 Polideportivos
+		// Agregar Polideportivos
 		listaEdificios.add(new Polideportivo(1000.0, "Polideportivo Norte"));
 		listaEdificios.add(new Polideportivo(800.0, "Polideportivo Sur"));
 		listaEdificios.add(new Polideportivo(1200.5, "Polideportivo Centro"));
 		
-		// Agregar 2 Edificios de Oficinas
+		// Agregar Edificios de Oficinas
 		listaEdificios.add(new edificioOficinas(10, 600.0));
 		listaEdificios.add(new edificioOficinas(5, 350.0));
 		
-		// Usar un Iterator para recorrer y mostrar los atributos
+		// Iterator para recorrer y mostrar los atributos
 		Iterator<Edificio> it = listaEdificios.iterator();
 		
 		while (it.hasNext()) {
