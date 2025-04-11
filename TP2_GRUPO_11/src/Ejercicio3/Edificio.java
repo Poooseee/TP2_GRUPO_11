@@ -1,23 +1,36 @@
 package Ejercicio3;
 
 public abstract class Edificio {
-	private double Superficie;
 	
+	//atributos
+	private double superficieEdificio;
+
+	//contructores
 	public Edificio() {
-		this.Superficie = 0.0;
-	}
-	
-	public Edificio(double Superficie) {
-		this.Superficie = Superficie;
-	}
-	
-	public double getSuperficie() {
-		return Superficie;
+		this.superficieEdificio = 0.0;
 	}
 
-	public void setSuperficie(double superficie) {
-		Superficie = superficie;
+    public Edificio(double km) {
+        this.superficieEdificio = km;
+    }
+
+	//getters y setter
+	public double getSuperficieEdificio() {
+		return superficieEdificio;
 	}
 
-	public abstract double getSuperficieEdificio();
+	public void setSuperficieEdificio(double superficieEdificio) {
+		this.superficieEdificio = superficieEdificio;
+	}
+
+    // ToString
+    @Override
+    public String toString() {
+        return "La superficie del edificio es " + superficieEdificio + " km².";
+    }
+
+	public String getTipoDeInstalacion() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

@@ -33,6 +33,6 @@ public class Polideportivo extends Edificio implements instalacionDeportiva{
 	}
 	@Override
 	public double getSuperficieEdificio() {
-		return 0; //COMPLETAR
+	    return super.getSuperficieEdificio();
 	}
 }

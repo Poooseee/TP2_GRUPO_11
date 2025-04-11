@@ -15,9 +15,9 @@ public class edificioOficinas extends Edificio {
 	public String toString() {
 		return "edificio de oficinas: superficie: "+superficie+", numero oficinas: "+numeroOficinas;
 	}
+	
 	@Override
 	public double getSuperficieEdificio() {
-		// TODO Auto-generated method stub
-		return 0;
+		return superficie;
 	}
 }
